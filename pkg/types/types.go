@@ -43,3 +43,21 @@ type PaymentSource struct {
 	Number  string
 	Balance Money
 }
+
+//Status payment status
+type Status string
+
+//payment statuses
+const (
+	StatusOk         Status = "OK"
+	StatusFail       Status = "FAIL"
+	StatusInProgress Status = "INPROGRESS"
+)
+
+//Payment payment information
+type Payment struct {
+	ID       int
+	Amount   Money
+	Category Category
+	Status   Status
+}
