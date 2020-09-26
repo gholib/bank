@@ -6,13 +6,6 @@ type Money int64
 //Category
 type Category string
 
-//Payment payment information
-type Payment struct {
-	ID       int
-	Amount   Money
-	Category Category
-}
-
 //Currency currency code
 type Currency string
 
