@@ -6,13 +6,6 @@ type Money int64
 //Category
 type Category string
 
-//Payment payment information
-type Payment struct {
-	ID       int
-	Amount   Money
-	Category Category
-}
-
 //Currency currency code
 type Currency string
 
@@ -42,4 +35,22 @@ type PaymentSource struct {
 	Type    string
 	Number  string
 	Balance Money
+}
+
+//Status payment status
+type Status string
+
+//payment statuses
+const (
+	StatusOk         Status = "OK"
+	StatusFail       Status = "FAIL"
+	StatusInProgress Status = "INPROGRESS"
+)
+
+//Payment payment information
+type Payment struct {
+	ID       int
+	Amount   Money
+	Category Category
+	Status   Status
 }
