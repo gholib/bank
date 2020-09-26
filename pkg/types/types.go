@@ -1,10 +1,10 @@
 package types
 
-//Money
-type Money int64
-
 //Category
 type Category string
+
+//Money
+type Money int64
 
 //Currency currency code
 type Currency string
