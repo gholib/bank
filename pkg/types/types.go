@@ -31,12 +31,6 @@ type Card struct {
 	Active     bool
 }
 
-type PaymentSource struct {
-	Type    string
-	Number  string
-	Balance Money
-}
-
 //Status payment status
 type Status string
 
